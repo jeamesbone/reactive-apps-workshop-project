@@ -11,7 +11,7 @@ import ReactiveSwift
 import ReactiveCocoa
 import Result
 
-class ViewController: UIViewController {
+class ButtonsViewController: UIViewController {
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var label: UILabel!
