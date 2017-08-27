@@ -18,15 +18,7 @@ class MemeSearchViewController: UIViewController {
     var viewModel: MemeSearchViewModel!
 
     override func viewDidLoad() {
-        searchBar.reactive
-            .continuousTextValues
-            .debounce(1.0, on: QueueScheduler.main)
-            .observeValues { searchString in
-                guard let searchString = searchString else { return }
-                self.viewModel.search(searchString) {
-                    self.tableView.reloadData()
-                }
-            }
+        
     }
 }
 

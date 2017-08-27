@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		560CD0311F52FB4900F64196 /* FakeImageSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD0301F52FB4900F64196 /* FakeImageSDK.swift */; };
+		560CD0331F52FE6D00F64196 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD0321F52FE6D00F64196 /* ImageService.swift */; };
 		56297EF41F50F6EE0056224C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56297EF31F50F6EE0056224C /* AppDelegate.swift */; };
 		56297EF61F50F6EE0056224C /* MemeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56297EF51F50F6EE0056224C /* MemeSearchViewController.swift */; };
 		56297EF91F50F6EE0056224C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56297EF71F50F6EE0056224C /* Main.storyboard */; };
 		56297EFB1F50F6EE0056224C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56297EFA1F50F6EE0056224C /* Assets.xcassets */; };
 		56297EFE1F50F6EE0056224C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56297EFC1F50F6EE0056224C /* LaunchScreen.storyboard */; };
-		56297F091F50F6EE0056224C /* ReactiveAppsWorkshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56297F081F50F6EE0056224C /* ReactiveAppsWorkshopTests.swift */; };
+		56297F091F50F6EE0056224C /* MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56297F081F50F6EE0056224C /* MapTests.swift */; };
 		569831FC1F529784008F8241 /* MemeConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569831FB1F529784008F8241 /* MemeConfigurationViewController.swift */; };
 		569832001F52983C008F8241 /* MemeImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569831FF1F52983C008F8241 /* MemeImageCell.swift */; };
 		569832031F529D8F008F8241 /* MemeSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569832021F529D8F008F8241 /* MemeSearchViewModel.swift */; };
@@ -51,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		560CD0301F52FB4900F64196 /* FakeImageSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeImageSDK.swift; sourceTree = "<group>"; };
+		560CD0321F52FE6D00F64196 /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		56297EF01F50F6EE0056224C /* ReactiveAppsWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveAppsWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56297EF31F50F6EE0056224C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56297EF51F50F6EE0056224C /* MemeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeSearchViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +63,7 @@
 		56297EFD1F50F6EE0056224C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56297EFF1F50F6EE0056224C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56297F041F50F6EE0056224C /* ReactiveAppsWorkshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveAppsWorkshopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		56297F081F50F6EE0056224C /* ReactiveAppsWorkshopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveAppsWorkshopTests.swift; sourceTree = "<group>"; };
+		56297F081F50F6EE0056224C /* MapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTests.swift; sourceTree = "<group>"; };
 		56297F0A1F50F6EE0056224C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		569831FB1F529784008F8241 /* MemeConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeConfigurationViewController.swift; sourceTree = "<group>"; };
 		569831FF1F52983C008F8241 /* MemeImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeImageCell.swift; sourceTree = "<group>"; };
@@ -90,12 +94,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		56297EE71F50F6EE0056224C = {
+		560CD02E1F52F9A200F64196 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				5698320E1F52DF03008F8241 /* ReactiveSwift.framework */,
 				5698320B1F52DEFD008F8241 /* ReactiveCocoa.framework */,
 				569832071F52DEF2008F8241 /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		560CD02F1F52FB3400F64196 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				560CD0301F52FB4900F64196 /* FakeImageSDK.swift */,
+				560CD0321F52FE6D00F64196 /* ImageService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		56297EE71F50F6EE0056224C = {
+			isa = PBXGroup;
+			children = (
+				560CD02E1F52F9A200F64196 /* Frameworks */,
 				56297EF21F50F6EE0056224C /* ReactiveAppsWorkshop */,
 				56297F071F50F6EE0056224C /* ReactiveAppsWorkshopTests */,
 				56297EF11F50F6EE0056224C /* Products */,
@@ -114,6 +135,7 @@
 		56297EF21F50F6EE0056224C /* ReactiveAppsWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				560CD02F1F52FB3400F64196 /* Service */,
 				569831FE1F5297DC008F8241 /* Configuration */,
 				569831FD1F5297D5008F8241 /* Search */,
 				56297EF31F50F6EE0056224C /* AppDelegate.swift */,
@@ -128,7 +150,7 @@
 		56297F071F50F6EE0056224C /* ReactiveAppsWorkshopTests */ = {
 			isa = PBXGroup;
 			children = (
-				56297F081F50F6EE0056224C /* ReactiveAppsWorkshopTests.swift */,
+				56297F081F50F6EE0056224C /* MapTests.swift */,
 				56297F0A1F50F6EE0056224C /* Info.plist */,
 			);
 			path = ReactiveAppsWorkshopTests;
@@ -261,8 +283,10 @@
 				56297EF61F50F6EE0056224C /* MemeSearchViewController.swift in Sources */,
 				569832001F52983C008F8241 /* MemeImageCell.swift in Sources */,
 				569831FC1F529784008F8241 /* MemeConfigurationViewController.swift in Sources */,
+				560CD0311F52FB4900F64196 /* FakeImageSDK.swift in Sources */,
 				56297EF41F50F6EE0056224C /* AppDelegate.swift in Sources */,
 				569832031F529D8F008F8241 /* MemeSearchViewModel.swift in Sources */,
+				560CD0331F52FE6D00F64196 /* ImageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56297F091F50F6EE0056224C /* ReactiveAppsWorkshopTests.swift in Sources */,
+				56297F091F50F6EE0056224C /* MapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,6 +5,9 @@
       location = "group:BuildingReactiveApps.playground">
    </FileRef>
    <FileRef
+      location = "group:ReactiveAppsExamples/ReactiveAppsExamples.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ReactiveAppsWorkshop.xcodeproj">
    </FileRef>
    <FileRef
