@@ -19,6 +19,7 @@
 		560CD0631F537AC800F64196 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5698320B1F52DEFD008F8241 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		560CD0641F537AC800F64196 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569832071F52DEF2008F8241 /* Result.framework */; };
 		560CD0651F537AC800F64196 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 569832071F52DEF2008F8241 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		560CD0681F538C9900F64196 /* SegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD0671F538C9900F64196 /* SegmentedControlViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		560CD0511F537A9F00F64196 /* ReactiveAppsExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveAppsExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		560CD0551F537A9F00F64196 /* ReactiveAppsExamplesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveAppsExamplesTests.swift; sourceTree = "<group>"; };
 		560CD0571F537A9F00F64196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		560CD0671F538C9900F64196 /* SegmentedControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewController.swift; sourceTree = "<group>"; };
 		569832071F52DEF2008F8241 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5698320B1F52DEFD008F8241 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5698320E1F52DF03008F8241 /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 			children = (
 				560CD0401F537A9F00F64196 /* AppDelegate.swift */,
 				560CD0421F537A9F00F64196 /* ViewController.swift */,
+				560CD0671F538C9900F64196 /* SegmentedControlViewController.swift */,
 				560CD0441F537A9F00F64196 /* UI.storyboard */,
 				560CD0471F537A9F00F64196 /* Assets.xcassets */,
 				560CD0491F537A9F00F64196 /* LaunchScreen.storyboard */,
@@ -232,6 +235,7 @@
 			files = (
 				560CD0431F537A9F00F64196 /* ViewController.swift in Sources */,
 				560CD0411F537A9F00F64196 /* AppDelegate.swift in Sources */,
+				560CD0681F538C9900F64196 /* SegmentedControlViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

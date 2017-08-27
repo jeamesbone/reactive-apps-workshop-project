@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="I7w-VY-1LK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,18 +23,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0nU-7H-w1P">
-                                <rect key="frame" x="36" y="40" width="303" height="607"/>
+                                <rect key="frame" x="36" y="84" width="303" height="563"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W54-x2-o8H">
-                                        <rect key="frame" x="0.0" y="0.0" width="303" height="202.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="187.5"/>
                                         <state key="normal" title="Button 1"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Soe-v0-0Yh">
-                                        <rect key="frame" x="0.0" y="202.5" width="303" height="202"/>
+                                        <rect key="frame" x="0.0" y="187.5" width="303" height="188"/>
                                         <state key="normal" title="Button 2"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvQ-Z3-Sys">
-                                        <rect key="frame" x="0.0" y="404.5" width="303" height="202.5"/>
+                                        <rect key="frame" x="0.0" y="375.5" width="303" height="187.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -50,6 +50,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="0nU-7H-w1P" secondAttribute="trailing" constant="20" id="YRN-QY-63C"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="e50-EZ-F5m">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="duC-xS-mlH">
+                            <connections>
+                                <segue destination="3pb-F2-8Gs" kind="show" id="x5S-Eb-Ev1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="button1" destination="W54-x2-o8H" id="E5a-Qb-upz"/>
                         <outlet property="button2" destination="Soe-v0-0Yh" id="Pzg-zP-g8I"/>
@@ -58,7 +65,80 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="136"/>
+            <point key="canvasLocation" x="1047.2" y="135.38230884557723"/>
+        </scene>
+        <!--Segmented Control View Controller-->
+        <scene sceneID="7wa-vb-ydk">
+            <objects>
+                <viewController id="3pb-F2-8Gs" customClass="SegmentedControlViewController" customModule="ReactiveAppsExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ur2-h7-E15"/>
+                        <viewControllerLayoutGuide type="bottom" id="4uG-nD-AIK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xI8-on-JIi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Z19-kD-RhN">
+                                <rect key="frame" x="36" y="164" width="303" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                    <segment title="Fourth"/>
+                                    <segment title="Fifth"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OE-Ym-Dyc">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z19-kD-RhN" firstAttribute="leading" secondItem="xI8-on-JIi" secondAttribute="leadingMargin" constant="20" id="ac6-Hh-eiB"/>
+                            <constraint firstItem="1OE-Ym-Dyc" firstAttribute="centerX" secondItem="xI8-on-JIi" secondAttribute="centerX" id="g7f-86-534"/>
+                            <constraint firstItem="Z19-kD-RhN" firstAttribute="top" secondItem="ur2-h7-E15" secondAttribute="bottom" constant="100" id="h3U-aW-h17"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z19-kD-RhN" secondAttribute="trailing" constant="20" id="mpH-1Z-Nam"/>
+                            <constraint firstItem="1OE-Ym-Dyc" firstAttribute="centerY" secondItem="xI8-on-JIi" secondAttribute="centerY" id="yTg-6P-IUx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="1OE-Ym-Dyc" id="Xug-OT-Y3V"/>
+                        <outlet property="segmentedControl" destination="Z19-kD-RhN" id="Oh0-vK-3cC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dc6-W9-46V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1868" y="134.48275862068968"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="Ggd-Ga-NCq">
+            <objects>
+                <viewControllerPlaceholder id="z7D-ju-lYc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kh7-9N-fvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002.4000000000001" y="108.84557721139431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ufD-rB-wT2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I7w-VY-1LK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3al-ph-RAm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RGY-W4-jRN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QE1-OS-Rf3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="135.38230884557723"/>
         </scene>
     </scenes>
 </document>
