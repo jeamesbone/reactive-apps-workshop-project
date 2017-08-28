@@ -19,7 +19,20 @@ class ButtonsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        button1.reactive.controlEvents(.touchUpInside)
+        let button1Signal = button1.reactive
+            .controlEvents(.touchUpInside)
+        let button2Signal = button2.reactive
+            .controlEvents(.touchUpInside)
+
+        let stringSignal: Signal<String, NoError> =
+            Signal.merge(button1Signal, button2Signal)
+            .map { button in
+                return self.emoji(for: button)
+            }
+
+        stringSignal.observeValues { string in
+            self.label.text = string
+        }
     }
 
     func emoji(for button: UIButton) -> String {

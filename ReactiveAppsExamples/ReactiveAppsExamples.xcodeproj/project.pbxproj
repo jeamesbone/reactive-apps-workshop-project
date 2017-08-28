@@ -20,6 +20,7 @@
 		560CD0641F537AC800F64196 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569832071F52DEF2008F8241 /* Result.framework */; };
 		560CD0651F537AC800F64196 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 569832071F52DEF2008F8241 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		560CD0681F538C9900F64196 /* SegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD0671F538C9900F64196 /* SegmentedControlViewController.swift */; };
+		56E7CE991F53AEF4004F7E70 /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E7CE981F53AEF4004F7E70 /* NetworkTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		569832071F52DEF2008F8241 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5698320B1F52DEFD008F8241 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5698320E1F52DF03008F8241 /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56E7CE981F53AEF4004F7E70 /* NetworkTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				560CD0471F537A9F00F64196 /* Assets.xcassets */,
 				560CD0491F537A9F00F64196 /* LaunchScreen.storyboard */,
 				560CD04C1F537A9F00F64196 /* Info.plist */,
+				56E7CE981F53AEF4004F7E70 /* NetworkTest.swift */,
 			);
 			path = ReactiveAppsExamples;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			files = (
 				560CD0431F537A9F00F64196 /* ButtonsViewController.swift in Sources */,
 				560CD0411F537A9F00F64196 /* AppDelegate.swift in Sources */,
+				56E7CE991F53AEF4004F7E70 /* NetworkTest.swift in Sources */,
 				560CD0681F538C9900F64196 /* SegmentedControlViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

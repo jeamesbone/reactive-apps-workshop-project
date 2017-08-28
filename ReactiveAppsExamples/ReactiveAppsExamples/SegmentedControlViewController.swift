@@ -12,4 +12,15 @@ class SegmentedControlViewController: UIViewController {
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var label: UILabel!
+
+    override func viewDidLoad() {
+        segmentedControl.reactive
+            .controlEvents(.valueChanged)
+            .map { segmentControl in
+                return self.segmentedControl.titleForSegment(at: self.segmentedControl.selectedSegmentIndex)
+            }
+            .observeValues { title in
+                self.label.text = title
+            }
+    }
 }
