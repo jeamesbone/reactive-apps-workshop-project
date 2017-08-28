@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         let networkService = NetworkService()
-        let url = URL(string: "https://jsonplaceholder.typicode.com/comments")!
+        let url = URL(string: "https://jsonplaceholder.typicode.com/posts")!
         let producer = networkService.get(url: url)
         producer.start { event in
             print(event)

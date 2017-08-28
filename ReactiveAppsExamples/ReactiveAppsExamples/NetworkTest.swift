@@ -22,7 +22,7 @@ struct Model {
 }
 
 class NetworkService {
-    func get(url: URL) -> SignalProducer<(Data, URLResponse), NetworkError> {
+    func get(url: URL) -> SignalProducer<Any, NetworkError> {
         let dataSignal = SignalProducer<(Data, URLResponse), NetworkError> { input, disposable in
             URLSession.shared.dataTask(with: url) { (data, response, error) in
                 if let data = data, let response = response {
@@ -34,6 +34,17 @@ class NetworkService {
             }.resume()
         }
         return dataSignal
+            .flatMap(.merge) { data, response in
+                return self.dataToJson(data)
+            }
+    }
+
+    func dataToJson(_ data: Data) -> SignalProducer<Any, NetworkError> {
+        if let json = try? JSONSerialization.jsonObject(with: data, options: []) {
+            return SignalProducer(value: json)
+        } else {
+            return SignalProducer(error: NetworkError.failed)
+        }
     }
 }
 
