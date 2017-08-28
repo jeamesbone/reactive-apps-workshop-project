@@ -19,7 +19,7 @@ class ButtonsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        button1.reactive.controlEvents(.touchUpInside)
     }
 
     func emoji(for button: UIButton) -> String {
